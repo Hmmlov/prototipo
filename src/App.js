@@ -1,9 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Inicio from './Views/Inicio'
+import Inicio from './Views/Inicio';
+import Menu from './Views/Menu';
+
 function App() {
   return (
     <>
+      <Menu />
       <Inicio/>
     </>
   );
