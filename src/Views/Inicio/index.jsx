@@ -1,4 +1,3 @@
-{/* utilidad  <></>   */}
 const Inicio = () => {
 
     return (
