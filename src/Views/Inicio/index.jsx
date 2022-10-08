@@ -1,7 +1,7 @@
 const Inicio = () => {
     return (
         <>
-            <h1>Prototipo</h1>
+            <span>Contenido de Prueba</span>
         </>
     )
 

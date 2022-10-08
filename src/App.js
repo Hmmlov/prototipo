@@ -5,8 +5,7 @@ import Menu from "./Components/Menu";
 function App() {
   return (
     <>
-      <Menu />
-      <Inicio />
+      <Menu contenido={<Inicio/>}/>
     </>
   );
 }
