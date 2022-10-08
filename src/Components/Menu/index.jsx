@@ -137,7 +137,7 @@ export default function Menu(props) {
                         <ListItemText primary="Facturas" />
                     </ListItemButton>
                     </Link>
-                    <Link to="Productos">
+                    <Link to="/Productos">
                     <ListItemButton>
                         <ListItemIcon>
                             <CategoryIcon />
@@ -145,7 +145,7 @@ export default function Menu(props) {
                         <ListItemText primary="Productos" />
                     </ListItemButton>
                     </Link>
-                    <Link to="Ventas">
+                    <Link to="/Ventas">
                     <ListItemButton>
                         <ListItemIcon>
                             <SellIcon />
