@@ -1,22 +1,28 @@
 //Clientes
 import DataGridDemo from "../../Components/Table/index";
-import { Stack, Button } from "@mui/material";
+import { Stack, Button, Divider } from "@mui/material";
 import IconToolTip from '../../Components/Icons/IconToolTip'
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
+
+import { GridActionsCellItem } from '@mui/x-data-grid';
+
 const Clientes = () => {
   const columns = [
     {
-        field: "Acciones",
-        type: "Actions",
-        getActions: (cellValues) => [
-            /*  */
-            <EditIcon />,
-            /*  */
-            /*  */
-            <DeleteIcon />,
-            /*  */
-          ],
+      field: "Acciones",
+      type: "actions",
+      getActions: (params) => [
+        /*  */
+        <GridActionsCellItem
+          icon={<DeleteIcon />}
+          label="Delete"
+        />,
+        <GridActionsCellItem
+          icon={<EditIcon />}
+          label="Edit"
+        />
+      ],
 
     },
     {
@@ -35,23 +41,24 @@ const Clientes = () => {
 
   const Rows = [
     {
-        Acciones: <EditIcon/>,
-        coD_Clientes: "Código",
-        noM_Clientes: "Nombre"
-        
+      coD_Clientes: "Código",
+      noM_Clientes: "Nombre"
+
     },
   ];
 
 
   return (
     <>
-        <div style={{ flexGrow: 1 }}>
-          <DataGridDemo
-            id={(row) => row.coD_Clientes}
-            rows={Rows}
-            columns={columns}
-          />
-        </div>
+      <h1>Clientes</h1>
+      <Button variant="contained">Agregar</Button>
+      <div style={{ flexGrow: 1, marginTop:15}}>
+        <DataGridDemo
+          id={(row) => row.coD_Clientes}
+          rows={Rows}
+          columns={columns}
+        />
+      </div>
     </>
   );
 };
