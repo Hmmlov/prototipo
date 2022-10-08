@@ -1,12 +1,12 @@
-import './App.css';
-import Inicio from './views/Inicio'
-import Menu from './views/Menu'
+import "./App.css";
+import Inicio from "./Views/Inicio";
+import Menu from "./Components/Menu";
 
 function App() {
   return (
     <>
       <Menu />
-      <Inicio/>
+      <Inicio />
     </>
   );
 }
