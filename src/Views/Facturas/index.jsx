@@ -2,7 +2,7 @@
 const Facturas = () => {
     return (
         <>
-            <h1>Facturas</h1>
+            <span>Facturas</span>
         </>
     )
 

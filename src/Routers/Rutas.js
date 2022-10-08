@@ -1,19 +1,18 @@
 import React from 'react'
 import {BrowserRouter, Route, Routes } from 'react-router-dom'
 import Menu from '../Components/Menu/index'
-import Clientes from '../Views/Clientes';
-import Facturas from '../Views/Facturas';
-import Productos from '../Views/Productos';
-import Ventas from '../Views/Ventas';
+import VistaClientes from '../Views/Clientes/vista';
+import VistaFacturas from '../Views/Facturas/vista';
+import VistaProductos from '../Views/Productos/vista';
+import VistaVentas from '../Views/Ventas/vista';
 function Rutas() {
   return (
     <BrowserRouter>
-    <Menu/>
     <Routes>
-        <Route path="/Clientes" element={<Clientes />} />
-        <Route path="/Facturas" element={<Facturas />} />
-        <Route path="/Productos" element={<Productos />} />
-        <Route path="/Ventas" element={<Ventas />} />
+        <Route path="/Clientes" element={<VistaClientes />} />
+        <Route path="/Facturas" element={<VistaFacturas />} />
+        <Route path="/Productos" element={<VistaProductos />} />
+        <Route path="/Ventas" element={<VistaVentas />} />
     </Routes>
     </BrowserRouter>
   );
