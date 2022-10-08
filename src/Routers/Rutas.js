@@ -9,6 +9,7 @@ function Rutas() {
   return (
     <BrowserRouter>
     <Routes>
+        <Route path="/" element={<VistaClientes />} />
         <Route path="/Clientes" element={<VistaClientes />} />
         <Route path="/Facturas" element={<VistaFacturas />} />
         <Route path="/Productos" element={<VistaProductos />} />
