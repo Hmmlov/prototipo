@@ -1,12 +1,9 @@
 import "./App.css";
-import Inicio from "./Views/Inicio";
-import Menu from "./Components/Menu";
+import Rutas from './Routers/Rutas';
 
 function App() {
   return (
-    <>
-      <Menu contenido={<Inicio/>}/>
-    </>
+      <Rutas />
   );
 }
 

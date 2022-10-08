@@ -21,6 +21,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import CategoryIcon from '@mui/icons-material/Category';
 import SellIcon from '@mui/icons-material/Sell';
+import { Link } from "react-router-dom";
 
 const drawerWidth = 240;
 
@@ -120,30 +121,38 @@ export default function Menu(props) {
                 </DrawerHeader>
                 <Divider />
                 <List>
+                    <Link to="/Clientes">
                     <ListItemButton>
                         <ListItemIcon>
                             <PersonIcon />
                         </ListItemIcon>
                         <ListItemText primary="Clientes" />
                     </ListItemButton>
+                    </Link>
+                    <Link to="/Facturas">
                     <ListItemButton>
                         <ListItemIcon>
                             <InsertDriveFileIcon />
                         </ListItemIcon>
                         <ListItemText primary="Facturas" />
                     </ListItemButton>
+                    </Link>
+                    <Link to="Productos">
                     <ListItemButton>
                         <ListItemIcon>
                             <CategoryIcon />
                         </ListItemIcon>
                         <ListItemText primary="Productos" />
                     </ListItemButton>
+                    </Link>
+                    <Link to="Ventas">
                     <ListItemButton>
                         <ListItemIcon>
                             <SellIcon />
                         </ListItemIcon>
                         <ListItemText primary="Ventas" />
                     </ListItemButton>
+                    </Link>
                 </List>
             </Drawer>
             <Main open={open}>
