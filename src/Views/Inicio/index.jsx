@@ -1,6 +1,4 @@
-
 const Inicio = () => {
-
     return (
         <>
             <h1>Prototipo</h1>
@@ -8,5 +6,4 @@ const Inicio = () => {
     )
 
 }
-
 export default Inicio;
