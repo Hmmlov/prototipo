@@ -1,9 +1,10 @@
 import './App.css';
-import Inicio from './Views/Inicio'
-import Menu from './Views/Menu'
+import Inicio from './views/Inicio'
+import Menu from './views/Menu'
 function App() {
   return (
     <>
+      <Menu/>
       <Inicio/>
     </>
   );
