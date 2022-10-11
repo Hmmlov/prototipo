@@ -76,31 +76,6 @@ const Facturas = () => {
           </TableHead>
         </Table>
       </TableContainer>
-      {/*  */}
-      <br />
-      {/* <TableContainer component={Paper}>
-        <table sx={{ minWidth: 700 }} aria-label="spanning table">
-          <TableHead>
-            <TableRow >
-              <TableCell>Descripcion</TableCell>
-              <TableCell align="right">Precio</TableCell>
-              <TableCell align="right">Cantidad</TableCell>
-              <TableCell align="right">Suma</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rowsp.map((row) => (
-              <TableRow key={row.descripcion}>
-                <TableCell align="right">{row.descripcion}</TableCell>
-                <TableCell align="right">{row.precio}</TableCell>
-                <TableCell align="right">{row.cantidad}</TableCell>
-                <TableCell align="right">{ccyFormat(row.price)}</TableCell>
-              </TableRow>
-            ))}
-            
-          </TableBody>
-        </table>
-      </TableContainer> */}
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 700 }} aria-label="spanning table">
           <TableHead>

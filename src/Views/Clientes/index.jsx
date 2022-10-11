@@ -80,7 +80,7 @@ const Clientes = () => {
       dni: "9876543",
       telefono: "953664758",
       direccion: "Avenida 5",
-      
+
     },
     {
       coD_Clientes: "002",
@@ -100,7 +100,7 @@ const Clientes = () => {
 
   return (
     <>
-      <h1>Clientes</h1>
+      <h1 style={{ margin: '0px' }}>Clientes</h1>
       <Button variant="contained" onClick={handleOpen}>
         Agregar
       </Button>
@@ -119,7 +119,7 @@ const Clientes = () => {
       >
         <Box sx={style}>
           <Stack direction="row"
-          spacing={1} xs={{ mb: 1, display: 'flex' }}>
+            spacing={1} xs={{ mb: 1, display: 'flex' }}>
             <Grid container spacing={1.5}>
               <Grid item md={6} sm={12} xs={12}>
                 <TextField
