@@ -153,6 +153,14 @@ export default function Menu(props) {
                         <ListItemText primary="Ventas" />
                     </ListItemButton>
                     </Link>
+                    <Link to="/Proveedores">
+                    <ListItemButton>
+                        <ListItemIcon>
+                            <PersonIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Proveedores" />
+                    </ListItemButton>
+                    </Link>
                 </List>
             </Drawer>
             <Main open={open}>

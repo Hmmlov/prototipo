@@ -30,6 +30,12 @@ function SideBar() {
       icon: FcWorkflow,
       url: "/Productos"
     },
+    {
+      id: '1',
+      label: 'Proveedores',
+      icon: FcConferenceCall,
+      url: "/Proveedores"
+    },
   ];
   const card:SideBarMenuCard  = {
       id: '1',
