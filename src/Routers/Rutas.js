@@ -3,6 +3,7 @@ import SideBar from '../SideBar';
 import Clientes from '../Views/Clientes/';
 import Facturas from '../Views/Facturas/';
 import Productos from '../Views/Productos/';
+import Proveedores from '../Views/Proveedores';
 import Ventas from '../Views/Ventas/';
 function Rutas() {
   return (
@@ -14,6 +15,7 @@ function Rutas() {
         <Route path="/Facturas" element={<Facturas />} />
         <Route path="/Productos" element={<Productos />} />
         <Route path="/Ventas" element={<Ventas />} />
+        <Route path="/Proveedores" element={<Proveedores />} />
     </Routes>
     </BrowserRouter>
   );

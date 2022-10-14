@@ -90,7 +90,7 @@ const Productos = () => {
 
   return (
     <>
-      <h1>Productos</h1>
+      <h1 style={{ margin: '0px' }}>Productos</h1>
       <Button variant="contained" onClick={handleOpen}>
         Agregar
       </Button>

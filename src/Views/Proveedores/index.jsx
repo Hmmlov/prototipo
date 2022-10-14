@@ -1,4 +1,4 @@
-//Ventas
+//Proveedores
 import * as React from "react";
 import DataGridDemo from "../../Components/Table/index";
 import {
@@ -12,7 +12,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import { GridActionsCellItem } from "@mui/x-data-grid";
-const Ventas = () => {
+const Proveedores = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -42,71 +42,62 @@ const Ventas = () => {
       ],
     },
     {
-      field: "coD_Ventas",
+      field: "coD_Proveedores",
       headerName: "Código",
       width: 100,
       headerAlign: "center",
     },
     {
-      field: "noM_Producto",
-      headerName: "Producto",
+      field: "deS_Proveedores",
+      headerName: "Descripcion",
       width: 400,
       headerAlign: "center",
     },
     {
-      field: "cantidad",
-      headerName: "Cantidad",
+      field: "precio",
+      headerName: "Precio",
       width: 100,
       headerAlign: "center",
     },
     {
-      field: "precio_Unitario",
-      headerName: "Precio Unitario",
-      width: 200,
-      headerAlign: "center",
-    },
-    {
-      field: "total",
-      headerName: "Total",
+      field: "Stock",
+      headerName: "Stock",
       width: 100,
       headerAlign: "center",
-    },
+    }
   ];
 
   const Rows = [
     {
-      coD_Ventas: "001",
-      noM_Producto: "Television",
-      cantidad: "3",
-      precio_Unitario: "12.90",
-      total: "100.0",
-      
+      coD_Proveedores: "001",
+      deS_Proveedores: "Steven Alex Contreras",
+      precio: "14.54",
+      Stock: "21",   
     },
     {
-      coD_Ventas: "002",
-      noM_Producto: "Arroz 1/4",
-      cantidad: "1",
-      precio_Unitario: "56.9",
-      total: "100.0",
+      coD_Proveedores: "002",
+      deS_Proveedores: "Antonio Lovera Espín",
+      precio: "14.54",
+      Stock: "12",
     },
     {
-      coD_Ventas: "003",
-      noM_Producto: "Aceite 1 litro",
-      cantidad: "5",
-      precio_Unitario: "12.7",
-      total: "100.0",
+      coD_Proveedores: "003",
+      deS_Proveedores: "Yosmar Hinestroza",
+      precio: "14.54",
+      Stock: "4",
     },
   ];
+  
 
   return (
     <>
-      <h1 style={{ margin: '0px' }}>Ventas</h1>
+      <h1 style={{ margin: '0px' }}>Proveedores</h1>
       <Button variant="contained" onClick={handleOpen}>
         Agregar
       </Button>
       <div style={{ flexGrow: 1, marginTop: 15 }}>
         <DataGridDemo
-          id={(row) => row.coD_Ventas}
+          id={(row) => row.coD_Proveedores}
           rows={Rows}
           columns={columns}
         />
@@ -121,38 +112,37 @@ const Ventas = () => {
           <Stack direction="row"
           spacing={1} xs={{ mb: 1, display: 'flex' }}>
             <Grid container spacing={1.5}>
+            <Grid item md={6} sm={12} xs={12}>
+                <TextField
+                  id="outlined-basic"
+                  fullWidth
+                  label="Proveedor"
+                  variant="outlined"
+                />
+              </Grid>
               <Grid item md={6} sm={12} xs={12}>
                 <TextField
                   id="outlined-basic"
                   fullWidth
-                  label="Producto"
+                  label="Descripcion"
                   variant="outlined"
                 />
               </Grid>
               <Grid item md={3} sm={12} xs={12}>
                 <TextField
                   id="outlined-basic"
-                  label="Cantidad"
-                  fullWidth
                   type="number"
-                  variant="outlined"
-                />
-              </Grid>
-              <Grid item md={3} sm={12} xs={12}>
-                <TextField
-                  id="outlined-basic"
-                  fullWidth
                   label="Precio"
-                  type="number"
+                  fullWidth
                   variant="outlined"
                 />
               </Grid>
-              <Grid item md={4} sm={4} xs={4}>
+              <Grid item md={3} sm={12} xs={12}>
                 <TextField
                   id="outlined-basic"
                   fullWidth
-                  label="Total"
                   type="number"
+                  label="Stock"
                   variant="outlined"
                 />
               </Grid>
@@ -170,4 +160,4 @@ const Ventas = () => {
   );
 };
 
-export default Ventas;
+export default Proveedores;
