@@ -27,8 +27,9 @@ const Facturas = () => {
   const TAX_RATE = 0.08;
 
   const rowsp = [
-    createRow("Televisor", 1300, 2),
-    createRow("Licuadora", 78, 3),
+    createRow("TOYOTA Aygo 70 x-sport 5 Puertas (Año 2021)", 62159, 3),
+    createRow("Cable de 6 cil Chevrolet", 200, 3),
+    createRow("filtro de aire motor", 4400, 5)
   ];
 
   function createRow(descripcion, precio, cantidad) {
@@ -60,11 +61,11 @@ const Facturas = () => {
     <div style={{ height: 400, width: "100%" }}>
       {/*  */}
       <br />
-      <h1 style={{ textAlign: "left", fontSize: "30px" }}>
+      <h1 style={{ textAlign: "left", fontSize: "30px"}}>
         <img
           src="https://seeklogo.com/images/F/factura-electronica-logo-6913D465C7-seeklogo.com.jpg"
+          align='right'
           width={100}
-          align="right"
         />
         Factura
         {rowsc.map((rowc) => (
@@ -75,8 +76,8 @@ const Facturas = () => {
             <p>Dirección: {rowc.direc}</p>
           </div>
         ))}
-        <h1 style={{ textAlign: "right", fontSize: "10px" }}>Ruc: 000000000</h1>
-        <p style={{ textAlign: "right", fontSize: "10px" }}>E001-33</p>
+        <h1 style={{ textAlign: "right", fontSize: "10px" }}>Ruc: 000000000 &nbsp;&nbsp;&nbsp;&nbsp;</h1>
+        <p style={{ textAlign: "right", fontSize: "10px" }}>E001-33 &nbsp;&nbsp;&nbsp;&nbsp;</p>
       </h1>
       <table style={{ borderCollapse: "collapse", width: "75%", cellpadding: '60px', borderColor: 'transparent'}} border={1} >
         <tr style={{ textAlign: "left" }}>

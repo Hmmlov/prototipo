@@ -76,25 +76,25 @@ const Ventas = () => {
   const Rows = [
     {
       coD_Ventas: "001",
-      noM_Producto: "Television",
+      noM_Producto: "TOYOTA Aygo 70 x-sport 5 Puertas (Año 2021)",
       cantidad: "3",
-      precio_Unitario: "12.90",
-      total: "100.0",
+      precio_Unitario: "62159",
+      total: "186477.0",
       
     },
     {
       coD_Ventas: "002",
-      noM_Producto: "Arroz 1/4",
-      cantidad: "1",
-      precio_Unitario: "56.9",
-      total: "100.0",
+      noM_Producto: "Cable de 6 cil Chevrolet",
+      cantidad: "3",
+      precio_Unitario: "200",
+      total: "600.0",
     },
     {
       coD_Ventas: "003",
-      noM_Producto: "Aceite 1 litro",
+      noM_Producto: "filtro de aire motor",
       cantidad: "5",
-      precio_Unitario: "12.7",
-      total: "100.0",
+      precio_Unitario: "4400",
+      total: "22000",
     },
   ];
 
