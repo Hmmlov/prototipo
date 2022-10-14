@@ -54,15 +54,27 @@ const Proveedores = () => {
       headerAlign: "center",
     },
     {
-      field: "precio",
-      headerName: "Precio",
+      field: "ruc",
+      headerName: "Ruc",
       width: 100,
       headerAlign: "center",
     },
     {
-      field: "Stock",
-      headerName: "Stock",
+      field: "telefono",
+      headerName: "teléfono",
       width: 100,
+      headerAlign: "center",
+    },
+    {
+      field: "email",
+      headerName: "email",
+      width: 200,
+      headerAlign: "center",
+    },
+    {
+      field: "f_ingreso",
+      headerName: "Fecha Ingreso",
+      width: 500,
       headerAlign: "center",
     }
   ];
@@ -71,20 +83,26 @@ const Proveedores = () => {
     {
       coD_Proveedores: "001",
       deS_Proveedores: "Steven Alex Contreras",
-      precio: "14.54",
-      Stock: "21",   
+      ruc: "20100132592",
+      telefono: "898789878",   
+      email: "toyota@corporativo.com",
+      f_ingreso: new Date(),
     },
     {
       coD_Proveedores: "002",
       deS_Proveedores: "Antonio Lovera Espín",
-      precio: "14.54",
-      Stock: "12",
+      ruc: "20297036981",
+      telefono: "565645349",   
+      email: "hyundai@corporativo.com",
+      f_ingreso: new Date(),
     },
     {
       coD_Proveedores: "003",
       deS_Proveedores: "Yosmar Hinestroza",
-      precio: "14.54",
-      Stock: "4",
+      ruc: "20472468147",
+      telefono: "994589342",   
+      email: "Kia@corporativo.com",
+      f_ingreso: new Date(),
     },
   ];
   

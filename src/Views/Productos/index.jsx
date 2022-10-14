@@ -70,21 +70,39 @@ const Productos = () => {
   const Rows = [
     {
       coD_Productos: "001",
-      deS_Productos: "Steven Alex Contreras",
-      precio: "14.54",
-      Stock: "21",   
+      deS_Productos: "TOYOTA Aygo 70 x-sport 5 Puertas (Año 2021)",
+      precio: "62159",
+      Stock: "10",   
     },
     {
       coD_Productos: "002",
-      deS_Productos: "Antonio Lovera Espín",
-      precio: "14.54",
-      Stock: "12",
+      deS_Productos: "Aygo 70 x-sport x-shift - 5-puertas - 2021",
+      precio: "78000",
+      Stock: "10",
     },
     {
       coD_Productos: "003",
-      deS_Productos: "Yosmar Hinestroza",
-      precio: "14.54",
-      Stock: "4",
+      deS_Productos: "Aygo 70 x-style - 5-puertas - 2020",
+      precio: "57000",
+      Stock: "5",
+    },
+    {
+      coD_Productos: "004",
+      deS_Productos: "Cable de 6 cil Chevrolet",
+      precio: "200",
+      Stock: "15",
+    },
+    {
+      coD_Productos: "005",
+      deS_Productos: "bobina chevrolet ",
+      precio: "180",
+      Stock: "20",
+    },
+    {
+      coD_Productos: "006",
+      deS_Productos: "filtro de aire motor",
+      precio: "4400",
+      Stock: "10",
     },
   ];
 
